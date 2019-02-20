@@ -215,7 +215,7 @@ body{
   bottom:0;
   width:100vw;
   height: $height;
-  position: absolute;
+  position: fixed;
   opacity:0;
   overflow:hidden;
 }

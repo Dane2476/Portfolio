@@ -210,7 +210,7 @@ body {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   opacity: 0;
   overflow: hidden;
 }
@@ -222,7 +222,7 @@ body {
   bottom: 0;
   width: 100vw;
   height: calc(100% - 90px);
-  position: absolute;
+  position: fixed;
   opacity: 0;
   overflow: hidden;
   z-index: 0;
