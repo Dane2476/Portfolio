@@ -207,6 +207,7 @@ body {
 #landing {
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -218,6 +219,7 @@ body {
 #about, #projects, #work {
   top: 90px;
   left: 0;
+  bottom: 0;
   width: 100vw;
   height: calc(100% - 90px);
   position: absolute;
