@@ -213,6 +213,7 @@ body {
   position: fixed;
   opacity: 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* Pages */
@@ -225,6 +226,7 @@ body {
   position: fixed;
   opacity: 0;
   overflow: hidden;
+  box-sizing: border-box;
   z-index: 0;
 }
 
@@ -667,7 +669,7 @@ body {
     margin-right: 15vw;
     margin-bottom: 50px;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
   }
   #header .content-link:hover {
     border: 0;

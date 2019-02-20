@@ -218,6 +218,7 @@ body{
   position: fixed;
   opacity:0;
   overflow:hidden;
+  box-sizing: border-box;
 }
 
 #landing.active, #about.active, #projects.active, #work.active{
@@ -719,7 +720,7 @@ body{
       margin-right:15vw;
       margin-bottom:50px;
       color:white;
-      font-size: 30px;
+      font-size: 25px;
     }
     .content-link:hover{
       border:0;
