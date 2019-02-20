@@ -695,20 +695,30 @@ body {
     visibility: visible;
   }
   #header .name {
-    top: 100px;
-    left: 50px;
+    font-size: 30px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #header .name.nvbar {
+    top: 20px;
+    left: 25px;
+    font-size: 25px;
+    transform: translate(0);
   }
   #header .nav {
+    position: absolute;
+    text-align: center;
     top: 50vh;
     display: flex;
     flex-direction: row;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
   #header .content-link {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
   }
   #header .content-link:hover {
     border: 0;
