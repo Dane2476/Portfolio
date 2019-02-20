@@ -40,12 +40,14 @@ body{
   opacity:0;
   transition:1s ease;
 }
-
+#header.main{
+  background-color:white;
+}
 #header{
   overflow: visible;
   height:90px;
   width:100vw;
-  background-color:white;
+  background-color:transparent;
   position:fixed;
   top:0;
   left:0;
@@ -135,6 +137,7 @@ body{
     }
   }
   #menu{
+    box-sizing: border-box;
     height: 0;
     position: absolute;
     list-style: none;
@@ -700,6 +703,34 @@ body{
   }
 }
 @media(max-width:680px){
+  #about{
+    -webkit-overflow-scrolling: touch;
+  }
+  #projects{
+    -webkit-overflow-scrolling: touch;
+  }
+  #work{
+    -webkit-overflow-scrolling: touch;
+  }
+  #particles-js{
+    height:60vh;
+    margin-top:40vh;
+    width:100vw;
+    background:$maincolor;
+    transform: skewY(0deg);
+    overflow:hidden;
+    outline: 1px solid transparent;
+    position:fixed;
+    z-index: 990;
+  }
+  #particles-js2{
+    height:100vh;
+    width:100vw;
+    background:#ffffff;
+    outline: 1px solid transparent;
+    position:fixed;
+    z-index:989;
+  }
   #header{
     #menu_open{
       visibility: hidden;
@@ -714,10 +745,11 @@ body{
     .nav{
       top:50vh;
       display:flex;
-      flex-direction: column;
+      flex-direction: row;
     }
     .content-link{
-      margin-right:15vw;
+      margin-left:50px;
+      margin-right:50px;
       margin-bottom:50px;
       color:white;
       font-size: 25px;

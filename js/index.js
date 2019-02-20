@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (!item.classList.contains('nvbar')){
             item.classList.add('nvbar')
             document.querySelector('#menu_open').classList.add('vis');
+            document.querySelector('#header').classList.add('main');
         }
       });
 
