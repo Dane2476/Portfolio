@@ -142,9 +142,11 @@ body {
   padding: 0;
 }
 #header #menu a {
+  box-sizing: border-box;
   text-decoration: none;
 }
 #header #menu li {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   height: 25vh;
@@ -159,24 +161,28 @@ body {
   font-style: normal;
 }
 #header #menu #one {
+  box-sizing: border-box;
   width: 0;
   background-color: #373f51;
   transition: 0.3s all;
   z-index: 10;
 }
 #header #menu #two {
+  box-sizing: border-box;
   width: 0;
   background-color: #5b6170;
   transition: 0.3s all;
   z-index: 8;
 }
 #header #menu #three {
+  box-sizing: border-box;
   width: 0;
   background-color: #7a7d87;
   transition: 0.3s all;
   z-index: 6;
 }
 #header #menu #four {
+  box-sizing: border-box;
   width: 0;
   background-color: #b6b9bf;
   transition: 0.3s all;
@@ -197,6 +203,7 @@ body {
   z-index: 99999;
 }
 #header .mobile_menu_active {
+  box-sizing: border-box;
   width: 100vw !important;
   font-size: 36px !important;
 }
