@@ -97,7 +97,7 @@ function mobileMenu(){
     menuClose.style.fontSize = '0px';
     menuOpen.style.fontSize = '25px';
     menuClose.style.padding = '0vw';
-    setTimeout(function(){z.style.zIndex= '0';}, 500);
+    setTimeout(function(){z.style.zIndex= '0';}, 400);
 
 
     for(var i = 0; i < navItems.length; i++){
