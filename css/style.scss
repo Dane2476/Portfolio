@@ -1,10 +1,10 @@
 $maincolor: #373F51;
 $accent:#2CDA9D;
 html{
-  height:100vh
+  height:100%
 }
 body{
-  height:100vh;
+  height:100%;
   margin:0;
   background-color: white;
 
@@ -42,6 +42,104 @@ body{
 }
 #header.main{
   background-color:white;
+}
+#mobileNav{
+  position: relative;
+  height:100%;
+  width:100%;
+  background-color: transparent;
+  z-index: 9999;
+  pointer-events: none;
+  .mobile_nav{
+    z-index: 9999;
+    position:absolute;
+    top:28px;
+    right:40px;
+    i{
+      transition: .3s;
+    }
+    i:hover{
+      color:$accent;
+    }
+  }
+  #menu{
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    list-style: none;
+    margin:0;
+    padding:0;
+    a{
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+    li{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+      height:25%;
+      width:100vw;
+      font-size: 0px;
+      color:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: regulator-nova, sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    #one{
+    box-sizing: border-box;
+    width: 0;
+    background-color:rgba(55, 63, 81,1);
+    transition:0.3s all;
+    z-index: 10;
+    }
+    #two{
+      box-sizing: border-box;
+      width: 0;
+      background-color:rgba(91, 97, 112,1);
+      transition:0.3s all;
+      z-index: 8;
+
+    }
+    #three{
+      box-sizing: border-box;
+      width: 0;
+      background-color:rgba(122, 125, 135,1);
+      transition:0.3s all;
+      z-index: 6;
+
+    }
+    #four{
+      box-sizing: border-box;
+      width: 0;
+      background-color:rgba(182, 185, 191, 1);
+      transition:0.3s all;
+      z-index: 4;
+
+    }
+  }
+  #menu_open{
+    visibility: hidden;
+    z-index: 9999;
+    font-size: 25px;
+  }
+  #menu_open.vis{
+    visibility:hidden;
+  }
+  #menu_close{
+    visibility: hidden;
+    font-size: 0px;
+    padding: 0;
+    z-index: 99999;
+  }
+  .mobile_menu_active{
+    box-sizing: border-box;
+    width:100vw!important;
+    font-size: 36px !important;
+  }
 }
 #header{
   overflow: visible;
@@ -124,97 +222,6 @@ body{
     transition:0s;
   }
 
-  .mobile_nav{
-    z-index: 9999;
-    position:absolute;
-    top:28px;
-    right:40px;
-    i{
-      transition: .3s;
-    }
-    i:hover{
-      color:$accent;
-    }
-  }
-  #menu{
-    box-sizing: border-box;
-    height: 0;
-    position: fixed;
-    list-style: none;
-    margin:0;
-    padding:0;
-    a{
-      box-sizing: border-box;
-      text-decoration: none;
-    }
-    li{
-      box-sizing: border-box;
-      margin:0;
-      padding:0;
-      height:calc(25vh - 11px);
-      width:100vw;
-      font-size: 0px;
-      color:white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: regulator-nova, sans-serif;
-      font-weight: 100;
-      font-style: normal;
-    }
-
-
-    #one{
-    box-sizing: border-box;
-    width: 0;
-    background-color:rgba(55, 63, 81,1);
-    transition:0.3s all;
-    z-index: 10;
-    }
-    #two{
-      box-sizing: border-box;
-      width: 0;
-      background-color:rgba(91, 97, 112,1);
-      transition:0.3s all;
-      z-index: 8;
-
-    }
-    #three{
-      box-sizing: border-box;
-      width: 0;
-      background-color:rgba(122, 125, 135,1);
-      transition:0.3s all;
-      z-index: 6;
-
-    }
-    #four{
-      box-sizing: border-box;
-      width: 0;
-      background-color:rgba(182, 185, 191, 1);
-      transition:0.3s all;
-      z-index: 4;
-
-    }
-  }
-  #menu_open{
-    visibility: hidden;
-    z-index: 9999;
-    font-size: 25px;
-  }
-  #menu_open.vis{
-    visibility:hidden;
-  }
-  #menu_close{
-    visibility: hidden;
-    font-size: 0px;
-    padding: 0;
-    z-index: 99999;
-  }
-  .mobile_menu_active{
-    box-sizing: border-box;
-    width:100vw!important;
-    font-size: 36px !important;
-  }
 }
 
 /* Pages */
@@ -738,13 +745,15 @@ body{
     position:fixed;
     z-index:989;
   }
-  #header{
+  #mobileNav{
     #menu_open{
       visibility: hidden;
     }
     #menu_open.vis{
       visibility:visible;
     }
+  }
+  #header{
     .name{
       font-size: 30px;
       top:25%;
