@@ -731,23 +731,10 @@ body{
     -webkit-overflow-scrolling: touch;
   }
   #particles-js{
-    height:60vh;
-    margin-top:40vh;
-    width:100vw;
-    background:$maincolor;
-    transform: skewY(0deg);
-    overflow:hidden;
-    outline: 1px solid transparent;
-    position:fixed;
-    z-index: 990;
+    display:none;
   }
   #particles-js2{
-    height:100vh;
-    width:100vw;
-    background:#ffffff;
-    outline: 1px solid transparent;
-    position:fixed;
-    z-index:989;
+    display: none;
   }
   .mobile_nav{
     #menu_open{
@@ -781,10 +768,11 @@ body{
       transform: translate(-50%);
     }
     .content-link{
-      color:white;
+      color:black;
       font-size: 20px;
     }
     .content-link:hover{
+      color:$maincolor;
       border:0;
     }
     .nav.nvbar{
