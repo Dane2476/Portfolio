@@ -63,6 +63,8 @@ function mobileMenu(){
   var four = document.querySelector("#four");
   var menuOpen = document.querySelector("#menu_open");
   var menuClose = document.querySelector("#menu_close");
+  var z = document.querySelector("#mobileNav");
+
 
   var navItems = document.querySelectorAll(".mobile_nav_item");
 
@@ -74,7 +76,9 @@ function mobileMenu(){
     menuOpen.style.fontSize = '0px';
     menuClose.style.fontSize = '25px';
     menuOpen.style.padding = '0vw';
+
     menuClose.style.visibility = 'visible';
+        z.style.zIndex = '9999';
     for(var i = 0; i < navItems.length; i++){
 
       navItems[i].className +=(' mobile_menu_active');
@@ -86,13 +90,14 @@ function mobileMenu(){
   }
   // Hide menu
   else{
-  x=0.3;
-  active = false;
-  menuOpen.style.visibility = 'visible';
-  menuClose.style.visibility = 'hidden';
-  menuClose.style.fontSize = '0px';
-  menuOpen.style.fontSize = '25px';
-  menuClose.style.padding = '0vw';
+    x=0.3;
+    active = false;
+    menuOpen.style.visibility = 'visible';
+    menuClose.style.visibility = 'hidden';
+    menuClose.style.fontSize = '0px';
+    menuOpen.style.fontSize = '25px';
+    menuClose.style.padding = '0vw';
+    z.style.zIndex= '0';
 
     for(var i = 0; i < navItems.length; i++){
 

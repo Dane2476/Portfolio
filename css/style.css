@@ -44,25 +44,39 @@ body {
   background-color: white;
 }
 
-#mobileNav {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  z-index: 9999;
-  pointer-events: none;
-}
-#mobileNav .mobile_nav {
+.mobile_nav {
   z-index: 9999;
   position: absolute;
   top: 28px;
   right: 40px;
 }
-#mobileNav .mobile_nav i {
+.mobile_nav i {
   transition: 0.3s;
 }
-#mobileNav .mobile_nav i:hover {
+.mobile_nav i:hover {
   color: #2CDA9D;
+}
+.mobile_nav #menu_open {
+  visibility: hidden;
+  z-index: 9999;
+  font-size: 25px;
+}
+.mobile_nav #menu_open.vis {
+  visibility: hidden;
+}
+.mobile_nav #menu_close {
+  visibility: hidden;
+  font-size: 0px;
+  padding: 0;
+  z-index: 99999;
+}
+
+#mobileNav {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 0;
 }
 #mobileNav #menu {
   box-sizing: border-box;
@@ -119,20 +133,6 @@ body {
   transition: 0.3s all;
   z-index: 4;
 }
-#mobileNav #menu_open {
-  visibility: hidden;
-  z-index: 9999;
-  font-size: 25px;
-}
-#mobileNav #menu_open.vis {
-  visibility: hidden;
-}
-#mobileNav #menu_close {
-  visibility: hidden;
-  font-size: 0px;
-  padding: 0;
-  z-index: 99999;
-}
 #mobileNav .mobile_menu_active {
   box-sizing: border-box;
   width: 100vw !important;
@@ -147,7 +147,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   /* When nav item is clicked: */
 }
 #header .name {
@@ -704,10 +704,10 @@ body {
     z-index: 989;
   }
 
-  #mobileNav #menu_open {
+  .mobile_nav #menu_open {
     visibility: hidden;
   }
-  #mobileNav #menu_open.vis {
+  .mobile_nav #menu_open.vis {
     visibility: visible;
   }
 

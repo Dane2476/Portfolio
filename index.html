@@ -28,13 +28,14 @@
     <a href="#projects" class="content-link projects">Projects</a>
     <a href="#work" class="content-link work">Work</a>
     <a href="" class="content-link resume">Resume</a>
+
   </div>
 </div>
+<div class="mobile_nav">
+  <i id="menu_open" onclick="mobileMenu()" class="fas fa-bars fa-lg"></i>
+  <i id="menu_close" onclick="mobileMenu()" class="fas fa-times fa-lg"></i>
+</div>
 <div id="mobileNav">
-  <div class="mobile_nav">
-    <i id="menu_open" onclick="mobileMenu()" class="fas fa-bars fa-lg"></i>
-    <i id="menu_close" onclick="mobileMenu()" class="fas fa-times fa-lg"></i>
-  </div>
   <ul id="menu">
     <a href="#about" onclick="mobileMenu(); about()"><li id="one" class="mobile_nav_item">About</li></a>
     <a href="#projects" onclick="mobileMenu(); projects()"><li id="two" class="mobile_nav_item">Projects</li></a>

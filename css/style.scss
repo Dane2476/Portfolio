@@ -43,25 +43,41 @@ body{
 #header.main{
   background-color:white;
 }
+
+.mobile_nav{
+  z-index: 9999;
+  position:absolute;
+  top:28px;
+  right:40px;
+  i{
+    transition: .3s;
+  }
+  i:hover{
+    color:$accent;
+  }
+  #menu_open{
+    visibility: hidden;
+    z-index: 9999;
+    font-size: 25px;
+  }
+  #menu_open.vis{
+    visibility:hidden;
+  }
+  #menu_close{
+    visibility: hidden;
+    font-size: 0px;
+    padding: 0;
+    z-index: 99999;
+  }
+}
+
 #mobileNav{
   position: relative;
   height:100%;
   width:100%;
   background-color: transparent;
-  z-index: 9999;
-  pointer-events: none;
-  .mobile_nav{
-    z-index: 9999;
-    position:absolute;
-    top:28px;
-    right:40px;
-    i{
-      transition: .3s;
-    }
-    i:hover{
-      color:$accent;
-    }
-  }
+  z-index: 0;
+
   #menu{
     box-sizing: border-box;
     height: 100%;
@@ -121,20 +137,6 @@ body{
 
     }
   }
-  #menu_open{
-    visibility: hidden;
-    z-index: 9999;
-    font-size: 25px;
-  }
-  #menu_open.vis{
-    visibility:hidden;
-  }
-  #menu_close{
-    visibility: hidden;
-    font-size: 0px;
-    padding: 0;
-    z-index: 99999;
-  }
   .mobile_menu_active{
     box-sizing: border-box;
     width:100vw!important;
@@ -149,7 +151,8 @@ body{
   position:fixed;
   top:0;
   left:0;
-  z-index:999;
+  z-index:9999;
+
 
   .name{
     top:100px;
@@ -745,7 +748,7 @@ body{
     position:fixed;
     z-index:989;
   }
-  #mobileNav{
+  .mobile_nav{
     #menu_open{
       visibility: hidden;
     }
