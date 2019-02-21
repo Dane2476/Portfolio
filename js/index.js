@@ -78,7 +78,7 @@ function mobileMenu(){
     menuOpen.style.padding = '0vw';
 
     menuClose.style.visibility = 'visible';
-        z.style.zIndex = '9999';
+    z.style.zIndex = '9999';
     for(var i = 0; i < navItems.length; i++){
 
       navItems[i].className +=(' mobile_menu_active');
@@ -97,7 +97,8 @@ function mobileMenu(){
     menuClose.style.fontSize = '0px';
     menuOpen.style.fontSize = '25px';
     menuClose.style.padding = '0vw';
-    z.style.zIndex= '0';
+    setTimeout(function(){z.style.zIndex= '0';}, 500);
+
 
     for(var i = 0; i < navItems.length; i++){
 

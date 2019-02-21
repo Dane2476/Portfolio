@@ -45,8 +45,8 @@ body{
 }
 
 .mobile_nav{
-  z-index: 9999;
-  position:absolute;
+  z-index: 99999;
+  position:fixed;
   top:28px;
   right:40px;
   i{
@@ -65,6 +65,7 @@ body{
   }
   #menu_close{
     visibility: hidden;
+    z-index: 9999;
     font-size: 0px;
     padding: 0;
     z-index: 99999;
